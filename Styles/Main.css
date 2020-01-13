@@ -103,6 +103,11 @@ body{
     color: #1b6f96;
 }
 
+.white
+{
+    color: whitesmoke;
+}
+
 .my-4 {
     border-color: black;
 }
@@ -110,11 +115,21 @@ body{
 .content-wrapper
 {
     width: 100%;
+    text-align: center;
+    font-family: "Public Sans", sans-serif;
 }
 
 .header-content
 {
-    text-align: center;
+    font-size: 72px;
+}
+
+.about-content
+{
+    color: white;
+    font-family: inherit;
+    font-size: 32px;
+    padding: 25px;
 }
 
 
