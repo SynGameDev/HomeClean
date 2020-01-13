@@ -22,7 +22,7 @@
   </head>
   <body>
     <div class="top-header">
-        <span class='float-left' style='padding:3px;'>
+        <span class='float-left' style='margin-left:25px;margin-top:3px;'>
             <a href='tel:0418514231'>
                 <span id='callus'>CALL US FOR A QUOTE |</span> <span id='num'>0418 514 231</span>
             </a>
@@ -61,8 +61,17 @@
     </div>
 
     <div class='content-wrapper'>
-        <h1 class='header-content'>Home<span class='red'>Clean<span class='blue'>Solutions</h1>
+        <!-- Heading -->
+        <h1 class='header-content'> <span class='white'>Welcome to</span> Home<span class='red'>Clean<span class='blue'>Solutions</h1> <br />
+            <img src='Images/Icon.png' width='250' height='250'/>
+        <!-- Small About us section --> <!-- TODO: Add Correct Content -->
+        <p class='about-content'>
+            We service a large variety of clients throughout the northern suburbs of Australia and have enjoyed continuous organic growth each and every year since we were founded.
+        </p>
     </div>
+
+    <!-- Footer -->
+    <?php include_once('Includes/Footer.php'); ?>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
