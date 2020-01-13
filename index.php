@@ -13,14 +13,16 @@
     <link rel="icon" href="/Images/Icon.png" />
 
     <!-- Stylesheets -->
-
+    <link rel='stylesheet' type='text/css' href='/Styles/Main.css' />
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
     <title>LANDING | HOMECLEANSOLUTIONS</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <div class="top-header">
+        <span class='float-left'>CALL US FOR A QUOTE</span>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
