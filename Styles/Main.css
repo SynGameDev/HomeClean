@@ -2,7 +2,7 @@
 
 
 body{
-    background: black;
+    background-color: #343a40 !important;
 }
 
 .top-header
@@ -103,6 +103,19 @@ body{
     color: #1b6f96;
 }
 
+.my-4 {
+    border-color: black;
+}
+
+.content-wrapper
+{
+    width: 100%;
+}
+
+.header-content
+{
+    text-align: center;
+}
 
 
 /* Media Screens For display's */
