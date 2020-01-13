@@ -30,7 +30,7 @@
         <span class='float-right' style='padding:5px;'>
         <a href='https://www.facebook.com/Homecleansolutions-100603651300911/?__tn__=%2Cd%2CP-R&eid=ARC0Zw5FwjBYgfuOe06HSLGdb2FWNflpBaLnxqA3yUsda7zrzLdltT8qPK-tbkHgRWiV0_YRTj2H_k92' class='social-link'><i class="fab fa-facebook-square"></i></a>
         <a href='#twitter' class='social-link'><i class='fab fa-twitter-square'></i>
-        <a href='#insta' class='social-link'><i class='fab fa-instagram-sqaure'></i>
+        <a href='#insta' class='social-link'><i class='fab fa-instagram'></i>
         </span>
     </div>
 
