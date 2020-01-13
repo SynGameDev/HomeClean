@@ -1,0 +1,34 @@
+/* testimonials */
+@import url('https://fonts.googleapis.com/css?family=IM+Fell+English:400i&display=swap');
+
+.carousel-item
+{
+    color: whitesmoke;
+}
+
+.carousel p
+{
+    color:inherit;
+    font-family: 'IM Fell English', cursive;
+    font-size: 28px;
+}
+
+.testText
+{
+    text-align: center;
+}
+
+.testBy
+{
+    text-align: right;
+}
+
+.wrapper
+{
+    width: 900px;
+}
+
+.carousel
+{
+    margin: auto;
+}
