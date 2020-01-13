@@ -18,6 +18,12 @@
     text-align: center;
 }
 
+.carousel-item h1
+{
+    font-family: inherit;
+    color: inherit;
+}
+
 .testBy
 {
     text-align: right;

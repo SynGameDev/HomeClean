@@ -28,10 +28,12 @@ include_once('Includes/Functions.php');
     <!-- Navigation -->
     <?php include_once('Includes/Nav.php'); ?>
 
-    <!-- TODO: Add a detailed about us section -->
+    <div class='jumbotron jumbotron-fluid' style="background-image: url('Images/AbouUs_Image.jpg');">
+
+    </div>
 
     <!-- testimonials --> <!-- TODO: Make Mobile Friendly -->
-    <div id="carousel" class="carousel slide" data-ride="carousel">
+    <div id="carousel" class="carousel slide" data-ride="carousel" style='height:250px;'>
       <div class="carousel-inner">
           <center>
               <div class='wrapper'>
