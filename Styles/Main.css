@@ -78,13 +78,19 @@ body{
     text-align: center;
     font-size: 48px;
     font-family: 'Public Sans', sans-serif;
-    text-shadow: 2px 2px lightgray;
+    text-shadow: 2px 2px #696969;
 }
 
 .jumboText a
 {
     color:inherit;
     text-decoration: none;
+}
+
+.jumboText a:hover
+{
+    text-decoration: underline;
+    color: inherit;
 }
 
 .red
@@ -96,6 +102,8 @@ body{
 {
     color: #1b6f96;
 }
+
+
 
 /* Media Screens For display's */
 @media only screen and (max-width: 400px)
