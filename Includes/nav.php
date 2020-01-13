@@ -6,27 +6,27 @@
     <div class='collapse navbar-collapse' id='mainNav'>
         <ul class='navbar-nav'>
             <li class='nav-item'>
-                <a class="nav-link" href='/index.php'>Home</a>
+                <a class="nav-link" href='index.php'>Home</a>
             </li>
         </ul>
         <ul class='navbar-nav'>
             <li class='nav-item'>
-                <a class='nav-link' href='/AboutUs.php'>About Us</a>
+                <a class='nav-link' href='AboutUs.php'>About Us</a>
             </li>
         </ul>
         <ul class='navbar-nav'>
             <li class='nav-item'>
-                <a class='nav-link' href='/Quote.php'>Request A Quote</a>
+                <a class='nav-link' href='Quote.php'>Request A Quote</a>
             </li>
         </ul>
         <ul class='navbar-nav'>
             <li class='nav-item'>
-                <a class='nav-link' href='/ContactUs.php'>Contact Us / Leave a Review</a>
+                <a class='nav-link' href='ContactUs.php'>Contact Us / Leave a Review</a>
             </li>
         </ul>
         <ul class='navbar-nav'>
             <li class='nav-item'>
-                <a class='nav-link' href='/Careers.php'>Careers</a>
+                <a class='nav-link' href='Careers.php'>Careers</a>
             </li>
         </ul>
     </div>
