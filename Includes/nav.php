@@ -24,5 +24,10 @@
                 <a class='nav-link' href='/ContactUs.php'>Contact Us / Leave a Review</a>
             </li>
         </ul>
+        <ul class='navbar-nav'>
+            <li class='nav-item'>
+                <a class='nav-link' href='/Careers.php'>Careers</a>
+            </li>
+        </ul>
     </div>
 </nav>
