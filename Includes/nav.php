@@ -16,12 +16,7 @@
         </ul>
         <ul class='navbar-nav'>
             <li class='nav-item'>
-                <a class='nav-link' href='Quote.php'>Request A Quote</a>
-            </li>
-        </ul>
-        <ul class='navbar-nav'>
-            <li class='nav-item'>
-                <a class='nav-link' href='ContactUs.php'>Contact Us / Leave a Review</a>
+                <a class='nav-link' href='Contact.php'>Contact Us / Leave a Review</a>
             </li>
         </ul>
         <ul class='navbar-nav'>
