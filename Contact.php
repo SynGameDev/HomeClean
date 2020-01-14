@@ -46,7 +46,10 @@ include_once('Includes/ContactForm.php');
                     </select>
                 </div>
                 <div class='form-group'>
-                    <textarea required class='form-control' style='height:250px;' placeholder='' id='data'></textarea>
+                    <textarea required class='form-control' style='height:250px;' placeholder='' id='data' name='data'></textarea>
+                </div>
+                <div class='form-group'>
+                    <button type='submit' name='send' class='btn btn-primary'>Submit</button>
                 </div>
             </form>
         </div>
