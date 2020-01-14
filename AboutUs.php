@@ -29,7 +29,7 @@ include_once('Includes/Functions.php');
     <?php include_once('Includes/Nav.php'); ?>
 
     <div class='jumbotron jumbotron-fluid' style="background-image: url('Images/AbouUs_Image.jpg');">
-
+        <p class=''
     </div>
 
     <!-- testimonials --> <!-- TODO: Make Mobile Friendly -->
