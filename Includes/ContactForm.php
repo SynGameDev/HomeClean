@@ -1,6 +1,6 @@
 <?php
 include_once('Functions.php');
-// include_once('config.php');
+include_once('config.php');
 
 $name = $email = $query = $msg = "";
 
