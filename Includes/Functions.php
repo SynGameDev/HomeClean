@@ -18,7 +18,7 @@ function RetrieveReviews()
         while($row = $result->fetch_assoc())
         {
             $review = $row["testimonal"];
-            $by = $row["from"];
+            $by = $row["review_by"];
             echoReview($review, $by);
         }
     } else
