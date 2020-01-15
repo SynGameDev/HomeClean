@@ -43,6 +43,7 @@ include_once('Includes/ContactForm.php');
                         <option value='review'>Leave a Review</option>
                         <option value='quote'>Get a Quote</option>
                         <option value='general'>General Question</option>
+                        <option value='cleaning'>Cleaning Tips</option>
                     </select>
                 </div>
                 <div class='form-group'>
