@@ -169,7 +169,18 @@ body{
 {
     .header-content
     {
-        font-size: 8px;
+        font-size: 28px;
+    }
+
+    .jumbotron
+    {
+        background-image: none;
+
+    }
+
+    .about-content
+    {
+        font-size: 24px;
     }
 }
 
