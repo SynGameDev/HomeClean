@@ -37,14 +37,10 @@ include_once('Includes/Functions.php');
     <!-- testimonials --> <!-- TODO: Make Mobile Friendly -->
     <div id="carousel" class="carousel slide" data-ride="carousel" style='height:250px;'>
       <div class="carousel-inner">
-          <center>
-              <div class='wrapper'>
                 <div class="carousel-item active">
                     <h1 class='testText'>Testimonals</h1>
                 </div>
                 <?php RetrieveReviews(); ?>
-            </div>
-        </center>
       </div>
         <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>

@@ -43,5 +43,26 @@
 {
     font-family: 'Public Sans', sans-serif;
     text-align: center;
+    font-size: 24px;
+    color: whitesmoke;
     padding: 50px;
+}
+
+@media only screen and (max-width: 450px)
+{
+    .about-section
+    {
+        font-size: 14px;
+    }
+
+    .jumbotron
+    {
+        height: 600px;
+        background-image: none;
+    }
+
+    .carousel p
+    {
+        font-size: 12px;
+    }
 }
