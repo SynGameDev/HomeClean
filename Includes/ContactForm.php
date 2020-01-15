@@ -9,9 +9,9 @@ if($conn->connect_error)
     echo $conn->connect_error;
 }
 
-if(isset($_POST["Send"]))
+if(isset($_POST["send"]))
 {
-    echo "Test";
+
     $name = input($_POST['name']);
     $email = input($_POST['email']);
     $query = input($_POST['query']);
