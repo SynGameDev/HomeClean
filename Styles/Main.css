@@ -137,7 +137,7 @@ body{
     background-color: #191b1c;
     bottom: 0;
     width: 100%;
-   position: fixed;
+  /* position: fixed; */
 }
 
 .footer-text
