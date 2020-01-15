@@ -1,7 +1,7 @@
 <?php
 include_once('Functions.php');
 
-$name = $email = $query = $data = "";
+$name = $email = $query = $msg = "";
 
 $emailto = "homecleansolutions71@gmail.com";
 
@@ -11,90 +11,49 @@ if($conn->connect_error)
     echo $conn->connect_error;
 }
 
-if(isset($_POST["send"]))
+if(isset($_POST['send']))
 {
-    $name = input($_POST["name"]);
-    $email = input($_POST["email"]);
-    $query = input($_POST["query"]);
-    $data = input($_POST["data"]);
-
-    $emailto = "homecleansolutions71@gmail.com";
+    $name = input($_POST['name']);
+    $email = input($_POST['email']);
+    $query = input($_POST['query']);
+    $msg = input($_POST["msg"]);
 
     switch($query)
     {
         case "review":
-            review($name, $email, $query, $data);
-            break;
-        case "general":
-            generarl();
+            review();
             break;
         case "quote":
             quote();
             break;
+        case "general":
+            general();
+            break;
         case "cleaning":
             tips();
             break;
-        default:
-            echo "ERROR";
-            break;
-
     }
 }
 
 
-function review($n, $e, $q, $d)
+function review()
 {
-    $conn = new mysqli('localhost', 'root', '', 'hcs');
-    if($conn->connect_error)
-    {
-        echo $conn->connect_error;
-    }
-    $sql = "INSERT INTO testimonals (testimonals, from, status) VALUES ('$d', '$n', 'New')";
-    if($conn->query($sql) === TRUE)
-    {
-        $linkid = $conn->insert_id;
-        $subject = "Review";
-        $msg = "
-        From: $n <br />
-
-        Review: <br />
-        $d
-
-        <br />
-        APPROVE: http://127.0.0.1/hcs/Approve.php?id=$linkid
-        ";
-
-        $headers = "From: $e" . "\r\n";
-        mail($emailto, $subject, $msg, $headers);
-    }
+    echo "Review";
 }
 
-function general($n, $e, $q, $d)
+function quote()
 {
-    $from = $e;
-    $name = $n;
-    $question = $d;
-    $subject = "General Query | $name";
-    $msg = $d;
-    $headers = "From: $from" . "\r\n";
-
-    mail($emailto, $subject, $msg, $headers);
+    echo "Quote";
 }
 
-function quote($n, $e, $q, $d)
+function general()
 {
-    $msg = $d;
-    $headers = "From: $from" . "\r\n";
-    $subject = "Quote | $name";
-    mail($emailto, $subject, $msg, $headers);
+    echo "General";
 }
 
-function tips($n, $e, $q, $d)
+function tips()
 {
-    $msg = $d;
-    $headers = "From: $from" . "\r\n";
-    $subjet = "Tips | $name";
-    mail($emailto, $subject, $msg, $headers);
+    echo "Tips";
 }
 
 ?>
