@@ -38,3 +38,10 @@
 {
     margin: auto;
 }
+
+.about-section
+{
+    font-family: 'Public Sans', sans-serif;
+    text-align: center;
+    padding: 50px;
+}
