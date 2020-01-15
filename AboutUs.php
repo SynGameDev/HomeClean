@@ -26,7 +26,7 @@ include_once('Includes/Functions.php');
       <?php include_once('Includes/top-header.php'); ?>
 
     <!-- Navigation -->
-    <?php include_once('Includes/Nav.php'); ?>
+    <?php include_once('Includes/nav.php'); ?>
 
     <div class='jumbotron jumbotron-fluid' style="background-image: url('Images/AbouUs_Image.jpg');">
         <p class=''

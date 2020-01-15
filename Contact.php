@@ -26,7 +26,7 @@ include_once('Includes/ContactForm.php');
       <?php include_once('Includes/top-header.php'); ?>
 
     <!-- Navigation -->
-    <?php include_once('Includes/Nav.php'); ?>
+    <?php include_once('Includes/nav.php'); ?>
 
     <div class="form">
         <div class='content-form'>

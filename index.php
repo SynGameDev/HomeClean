@@ -22,7 +22,7 @@
       <?php include_once('Includes/top-header.php'); ?>
 
     <!-- Navigation -->
-    <?php include_once('Includes/Nav.php'); ?>
+    <?php include_once('Includes/nav.php'); ?>
 
     <!-- Jumbotron -->
     <div class='jumbotron jumbotron-fluid'>
