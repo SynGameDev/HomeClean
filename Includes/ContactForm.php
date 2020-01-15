@@ -1,5 +1,6 @@
 <?php
 include_once('Functions.php');
+include_once('config.php');
 
 $name = $email = $query = $msg = "";
 
@@ -21,7 +22,7 @@ if(isset($_POST['send']))
     switch($query)
     {
         case "review":
-            review($name, $email, $query, $msg);
+            review($name, $email, $query, $msg, $dbcon);
             break;
         case "quote":
             quote();
@@ -36,7 +37,7 @@ if(isset($_POST['send']))
 }
 
 
-function review($name, $email, $subject, $msg)
+function review($name, $email, $subject, $msg, $conn)
 {
 
     $conn = new mysqli('localhost', 'root', '', 'hcs');         // Database connection
