@@ -48,7 +48,7 @@ function review($name, $email, $subject, $msg, $conn)
         // TODO: Add Email
         $emailto = "homecleansolutions71@gmail.com";
         mail($emailto, $subject, $msg, $headers);
-        echo "<script>Alert('Email Sent');</script>"
+        echo "<div class='alert alert-success' role='alert'>Email Sent</div>";
     } else
     {
         die($conn->error);
