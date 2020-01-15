@@ -13,6 +13,9 @@ $(document).ready(function() {
             case "general":
                 $("#data").attr('placeholder', 'How can we help today...');
                 break;
+            case "cleaning":
+                $("#data").attr('placeholder', 'Ask the master...');
+                break;
             default:
                 break;
         }
