@@ -9,8 +9,9 @@ if($conn->connect_error)
     echo $conn->connect_error;
 }
 
-if(isset($_POST['send']))
+if(isset($_POST["Send"]))
 {
+    echo "Test";
     $name = input($_POST['name']);
     $email = input($_POST['email']);
     $query = input($_POST['query']);
@@ -19,7 +20,7 @@ if(isset($_POST['send']))
     switch($query)
     {
         case "review":
-            review($name, $email, $query, $msg, $dbcon);
+            review($name, $email, $query, $msg);
             break;
         case "quote":
             quote();
@@ -34,10 +35,10 @@ if(isset($_POST['send']))
 }
 
 
-function review($name, $email, $subject, $msg, $conn)
+function review($name, $email, $subject, $msg)
 {
 
-    $conn = new mysqli('localhost', 'root', '', 'hcs');         // Database connection
+    $conn = $dbcon = new mysqli('localhost', 'u577142979_HCS_DB_Admin', 'MotherDuck@70', 'u577142979_HomeCleanSolut');
 
     $sql = "INSERT INTO testimonals (testimonal, review_by, status) VALUES ('$msg', '$name', 'Pending')";
 
