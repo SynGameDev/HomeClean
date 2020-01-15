@@ -1,12 +1,9 @@
 <?php
 include_once('Functions.php');
-include_once('config.php');
+// include_once('config.php');
 
 $name = $email = $query = $msg = "";
 
-
-
-$conn = new mysqli('localhost', 'root', '', 'hcs');
 if($conn->connect_error)
 {
     echo $conn->connect_error;
