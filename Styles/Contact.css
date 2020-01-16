@@ -10,6 +10,13 @@
     margin: 0 auto;
 }
 
+.alert {
+    margin-top: 50px;
+    padding: 350px;
+    position: absolute;
+    box-shadow: 0 0 3px gray;
+}
+
 @media only screen and (max-width: 800px)
 {
     .content-form
