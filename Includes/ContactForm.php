@@ -37,7 +37,7 @@ if(isset($_POST["send"]))
 
 function review($name, $email, $subject, $msg)
 {
-    $conn = $dbcon = new mysqli('localhost', 'u577142979_HCS_DB_Admin', 'MotherDuck@70', 'u577142979_HomeCleanSolut');
+    $conn =  new mysqli('localhost', 'u577142979_HCS_DB_Admin', 'MotherDuck@70', 'u577142979_HomeCleanSolut');
 
     $sql = "INSERT INTO testimonals (testimonal, review_by, status) VALUES ('$msg', '$name', 'Pending')";
 
@@ -54,16 +54,23 @@ function review($name, $email, $subject, $msg)
         "
         $emailto = "homecleansolutions71@gmail.com";
         mail($emailto, $subject, $msg, $headers);
-        echo "<div class='alert alert-success' role='alert'>Email Sent</div>";
+        echo "<div class='alert alert-success' style='position:absolute;'>Email Sent</div>"
     } else
     {
         die($conn->error);
     }
 }
 
-function quote()
+function quote($name, $subject, $email, $msg)
 {
-    echo "Quote";
+    $conn =  new mysqli('localhost', 'u577142979_HCS_DB_Admin', 'MotherDuck@70', 'u577142979_HomeCleanSolut');
+    $subject = "QUOTE | " . $name;
+    $headers = "From: $email" . "\r\n";
+
+    $emailto = "homecleansolutions71@gmail.com";
+    mail($emailto, $subject, $msg, $headers);
+    echo "<div class='alert alert-success' style='position:absolute;'>Email Sent</div>"
+
 }
 
 function general()
