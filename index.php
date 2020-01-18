@@ -29,7 +29,7 @@
         <div class='container'>
             <div class='row'>
                 <div class='col-sm'>
-                    <p class='jumboText black'>Need a quote? Contact Us Below!</p>
+                    <p class='jumboText black'>Need your house cleaned? <br /><a href='Contact.php'>Contact us below</a></p>
                     <hr class='my-4' />
                 </div>
             </div>
