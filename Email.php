@@ -1,12 +1,14 @@
 <html>
 <head>
 <script src="https://kit.fontawesome.com/709e063d76.js" crossorigin="anonymous"></script>
+<link rel='stylsheet' type='text/css' href='wip.homecleansolutions.com.au/Styles/Main.css' />
 </head>
 <style>
 
 body
 {
     background-color: darkgray;
+    font-family: 'Public Sans', sans-serif;
 }
 
 .wrapper {
@@ -32,11 +34,12 @@ body
 
             <br /><br />
 
-            Thanks,
+            Thanks,<br />
             HomeClean Solutions<br />
             <a target="_blank" href='https://www.facebook.com/Homecleansolutions-100603651300911/?__tn__=%2Cd%2CP-R&eid=ARC0Zw5FwjBYgfuOe06HSLGdb2FWNflpBaLnxqA3yUsda7zrzLdltT8qPK-tbkHgRWiV0_YRTj2H_k92' class='social-link'><i class="fab fa-facebook-square"></i></a>
             <a target="_blank" href='#twitter' class='social-link'><i class='fab fa-twitter-square'></i></a>
             <a targer="_blank" href='#insta' class='social-link'><i class='fab fa-instagram'></i></a>
+            <a href="phone:0434960214" class='social-link'><i class="fas fa-phone-square-alt"></i>
     </div>
 </body>
 
