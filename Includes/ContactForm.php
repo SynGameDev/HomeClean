@@ -47,9 +47,14 @@ function review($name, $email, $subject, $msg)
     if($conn->query($sql) === TRUE)
     {
         // TODO: Add Email
-        $emailto = "homecleansolutions71@gmail.com";
+        $emailto = "syndicategamdedev@gmail.com";           // Change to the relevent email
+        $id = $conn->insert_id;         // Get the insert ID
+        $em = "
+            $msg <br /> <br />
+            <a href='wip.homecleansolutions.com.au/approve.php?id=$id'>Approve</a>
+        ";
         mail($emailto, $subject, $msg, $headers);
-        echo "<div class='alert alert-success' role='alert'>Email Sent</div>";
+        echo "<div class='alert alert-success' style='position:absolute;' role='alert'>Email Sent</div>";
     } else
     {
         die($conn->error);
