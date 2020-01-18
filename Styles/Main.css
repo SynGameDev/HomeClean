@@ -14,6 +14,12 @@ body{
     color: white;
 }
 
+nav
+{
+    font-family: "Public Sans";
+
+}
+
 .top-header a
 {
     text-decoration: none;
