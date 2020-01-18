@@ -54,26 +54,43 @@ function review($name, $email, $subject, $msg)
             <a href='wip.homecleansolutions.com.au/Approve.php?id=$id'>Approve</a>
         ";
         mail($emailto, $subject, $em, $headers);
-        $svrmsg = "<div class='alert alert-success' role='alert'>Email Sent</div>";
+        EmailSent();
     } else
     {
         die($conn->error);
     }
 }
 
-function quote()
+function quote($name, $email, $msg)
 {
-    echo "Quote";
+    $emailto = "syndicategamedev@gmail.com";
+    $subject = "Quote | " . $name;
+    $headers = "From: $email " . "\r\n";
+    mail($emailto, $subject, $msg, $headers);
+    EmailSent();
 }
 
-function general()
+function general($name, $email, $msg)
 {
-    echo "General";
+    $emailto = "syndicategamedev@gmail.com";
+    $subject = "General Query | " . $name;
+    $headers = "From: $email" . "\r\n";
+    mail($emailto, $subject, $msg, $headers);
+    EmailSent();
 }
 
 function tips()
 {
-    echo "Tips";
+    $emailto = "syndicategamedev@gmail.com";
+    $subject = "Cleaning Tips | " . $name;
+    $headers = "From: $email" . "\r\n";
+    mail($emailto, $subject $msg, $headers);
+    EmailSent();
+}
+
+function EmailSent()
+{
+    echo "<script>alert('Email Sent');</script>";
 }
 
 ?>
