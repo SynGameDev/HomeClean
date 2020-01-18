@@ -10,34 +10,18 @@ body
     color: white;
 }
 
-.lean {
-    font-family: cursive;
-}
-
-.content {
-    background-color: whitesmoke;
+.wrapper {
+    background: white;
+    width: 75%;
+    height: 75%;
+    margin: 0 auto;
 }
 
 </style>
 <body>
-<center>
-    <p class='content'>
-        Hi Jennifer,
-        <br />
-        Thanks for your enquiry, someone from our team will be in touch shortly.
-        <br />
+    <div class='wrapper'>
 
-        <p class='lean'>"Hi! I'd love some tips on cleaning, can you please reply with some! thanks"</p><br />
-
-        If you have any other question please contact us, or visit our website <br />
-
-        <a href="wip.homecleansolutions.com.au"><img src="homecleansolutions.com.au/Icon.png" /></a><br />
-
-        Thanks,<br />
-        HomeClean Solutions.<br />
-        <span><a href="emailto:homecleansolutions71@gmail.com">Email Us</a> | <a href="phone:0418514231">Call Us</a> |
-</p>
-</center>
+    </div>
 </body>
 
 </html>
