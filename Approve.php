@@ -12,7 +12,8 @@ if(isset($_GET["id"]))
 
     if($conn->query($sql) === TRUE)
     {
-        echo "<script>window.location.href='wip.homecleansolutions.com.au';</script>";
+        echo "Done";
+        // echo "<script>window.location.href='wip.homecleansolutions.com.au';</script>";
     } else
     {
         die($conn->error);

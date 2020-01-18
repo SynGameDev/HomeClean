@@ -51,10 +51,10 @@ function review($name, $email, $subject, $msg)
         $id = $conn->insert_id;         // Get the insert ID
         $em = "
             $msg <br /> <br />
-            <a href='wip.homecleansolutions.com.au/approve.php?id=$id'>Approve</a>
+            <a href='wip.homecleansolutions.com.au/Approve.php?id=$id'>Approve</a>
         ";
-        mail($emailto, $subject, $msg, $headers);
-        echo "<div class='alert alert-success' style='position:absolute;' role='alert'>Email Sent</div>";
+        mail($emailto, $subject, $em, $headers);
+        $svrmsg = "<div class='alert alert-success' role='alert'>Email Sent</div>";
     } else
     {
         die($conn->error);
