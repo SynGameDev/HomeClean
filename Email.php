@@ -9,7 +9,7 @@ body
 {
     background-color: darkgray;
     font-family: 'Public Sans', sans-serif;
-    font-family: 24px;
+    font-size: 24px;
 }
 
 .wrapper {
