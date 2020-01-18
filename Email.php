@@ -7,7 +7,6 @@
 body
 {
     background-color: darkgray;
-    color: white;
 }
 
 .wrapper {
@@ -16,6 +15,7 @@ body
     height: 90%;
     margin: 0 auto;
     maring-top: 100px;
+    padding: 30px;
 }
 
 </style>
