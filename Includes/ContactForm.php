@@ -47,7 +47,7 @@ function review($name, $email, $subject, $msg)
     if($conn->query($sql) === TRUE)
     {
         // TODO: Add Email
-        $emailto = "syndicategamdedev@gmail.com";           // Change to the relevent email
+        $emailto = "syndicategamedev@gmail.com";           // Change to the relevent email
         $id = $conn->insert_id;         // Get the insert ID
         $em = "
             $msg <br /> <br />

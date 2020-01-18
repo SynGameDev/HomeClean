@@ -2,22 +2,17 @@
 include_once('Includes/Functions.php');
 $id = "";
 
+echo "Test";
+
 $conn = $dbcon = new mysqli('localhost', 'u577142979_HCS_DB_Admin', 'MotherDuck@70', 'u577142979_HomeCleanSolut');
+if($conn->connect_error)
+{
+    die($conn->connect_error);
+}
 
 if(isset($_GET["id"]))
 {
-    $id = input($_GET["id"]);           // Get ID from URL
-
-    $sql = "UPDATE testimonals SET status='Approved' WHERE id='$ud'";
-
-    if($conn->query($sql) === TRUE)
-    {
-        echo "Done";
-        // echo "<script>window.location.href='wip.homecleansolutions.com.au';</script>";
-    } else
-    {
-        die($conn->error);
-    }
+    echo $_GET["id"];
 }
 
 ?>
