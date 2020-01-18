@@ -9,6 +9,7 @@ body
 {
     background-color: darkgray;
     font-family: 'Public Sans', sans-serif;
+    font-family: 24px;
 }
 
 .wrapper {
@@ -18,6 +19,7 @@ body
     margin: 0 auto;
     maring-top: 100px;
     padding: 30px;
+    border-radius: 5px;
 }
 
 </style>
