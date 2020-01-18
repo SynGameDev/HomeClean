@@ -13,7 +13,7 @@ body
 .wrapper {
     background: white;
     width: 75%;
-    height: 75%;
+    height: 90%;
     margin: 0 auto;
     maring-top: 100px;
 }
