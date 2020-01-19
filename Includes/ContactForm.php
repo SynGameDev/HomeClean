@@ -86,14 +86,14 @@ function tips($name, $email, $msg)
     $headers = "From: $email" . "\r\n";
     mail($emailto, $subject $msg, $headers);
     EmailSent();
-    sendCustEmail('Cleaning Tips', $msg, $name, $email);
+    // sendCustEmail('Cleaning Tips', $msg, $name, $email);
 }
 
 function EmailSent()
 {
     echo "<script>alert('Email Sent');</script>";
 }
-
+/*
 function sendCustEmail($type, $query, $name, $email)
 {
 
@@ -151,7 +151,7 @@ function sendCustEmail($type, $query, $name, $email)
     ";
     mail($email, $subject, $msg, $headers);
 }
-
+*/
 
 
 
