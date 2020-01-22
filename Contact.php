@@ -27,6 +27,12 @@ include_once('Includes/ContactForm.php');
     <!-- Navigation -->
     <?php include_once('Includes/nav.php'); ?>
 
+    <?php
+    if(isset($svrmsg))
+    {
+        echo $svrmsg;
+    }
+     ?>
     <div class="form">
         <div class='content-form'>
             <form method='post' action='<?php echo $_SERVER["PHP_SELF"]; ?>'>

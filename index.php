@@ -29,7 +29,7 @@
         <div class='container'>
             <div class='row'>
                 <div class='col-sm'>
-                    <p class='jumboText black'>Need a quote? Contact Us Below!</p>
+                    <p class='jumboText black'>Need your house cleaned? <br /><a href='Contact.php'>Contact us below</a></p>
                     <hr class='my-4' />
                 </div>
             </div>
@@ -49,7 +49,7 @@
 
     <div class='content-wrapper'>
         <!-- Heading -->
-        <h1 class='header-content'> <span class='white'>Welcome to</span> Home<span class='red'>Clean<span class='blue'>Solutions</h1> <br />
+        <h1 class='header-content'> <span class='white'>Welcome to</span> Home<span class='red'>Clean<span class='blue'> Solutions</h1> <br />
             <img src='Images/Icon.png' width='250' height='250'/>
         <!-- Small About us section --> <!-- TODO: Add Correct Content -->
         <p class='about-content'>

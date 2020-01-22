@@ -5,7 +5,7 @@ include_once('config.php');
 function RetrieveReviews()
 {
 
-    $conn = new mysqli('localhost', 'root', '', 'hcs');
+    $conn = $dbcon = new mysqli('localhost', 'u577142979_HCS_DB_Admin', 'MotherDuck@70', 'u577142979_HomeCleanSolut');
     if($conn->connect_error)
     {
         echo $conn->connect_error;
