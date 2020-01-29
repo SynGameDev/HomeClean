@@ -3,10 +3,6 @@ include_once('Functions.php');
 
 $name = $email = $query = $msg = "";
 
-if($conn->connect_error)
-{
-    echo $conn->connect_error;
-}
 
 if(isset($_POST["send"]))
 {
