@@ -22,13 +22,13 @@ if(isset($_POST["send"]))
             review($name, $email, $query, $msg);
             break;
         case "quote":
-            quote();
+            email($name, $email, $query, $ms, "Quote");
             break;
         case "general":
-            general();
+            email($name, $email, $query, $ms, "General Enquiry");
             break;
         case "cleaning":
-            tips();
+            email($name, $email, $query, $ms, "Cleaning Tips");
             break;
     }
 }
@@ -60,41 +60,18 @@ function review($name, $email, $subject, $msg)
     }
 }
 
-function quote($name, $subject, $email, $msg)
+
+function email($name, $subject, $email, $msg, $type)
 {
     $conn =  new mysqli('localhost', 'u577142979_HCS_DB_Admin', 'MotherDuck@70', 'u577142979_HomeCleanSolut');
-    $subject = "QUOTE | " . $name;
+    $email to "syndicategamedev@gmail.com";
     $headers = "From: $email" . "\r\n";
 
-    $emailto = "homecleansolutions71@gmail.com";
+    $subject = $type . " | " . $subject;            // Set the subject
     mail($emailto, $subject, $msg, $headers);
-    echo "<div class='alert alert-success' style='position:absolute;'>Email Sent</div>"
-
+    //  TODO: Email sent
 }
 
-function general($name, $email, $msg)
-{
-    $emailto = "syndicategamedev@gmail.com";
-    $subject = "General Query | " . $name;
-    $headers = "From: $email" . "\r\n";
-    mail($emailto, $subject, $msg, $headers);
-    EmailSent();
-}
-
-function tips($name, $email, $msg)
-{
-    $emailto = "syndicategamedev@gmail.com";
-    $subject = "Cleaning Tips | " . $name;
-    $headers = "From: $email" . "\r\n";
-    mail($emailto, $subject $msg, $headers);
-    EmailSent();
-    // sendCustEmail('Cleaning Tips', $msg, $name, $email);
-}
-
-function EmailSent()
-{
-    echo "<script>alert('Email Sent');</script>";
-}
 /*
 function sendCustEmail($type, $query, $name, $email)
 {
