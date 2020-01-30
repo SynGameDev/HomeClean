@@ -30,6 +30,7 @@ if(isset($_POST["send"]))
     }
 }
 
+/*
 
 function email($name, $subject, $email, $msg, $type)
 {
@@ -42,6 +43,7 @@ function email($name, $subject, $email, $msg, $type)
     //  TODO: Email sent
 }
 
+*/
 
 
 ?>
