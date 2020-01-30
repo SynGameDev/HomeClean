@@ -1,5 +1,5 @@
 <?php
-// include_once('Includes/ContactForm.php');
+include_once('Includes/ContactForm.php');
 ?>
 <!doctype html>
 <html lang="en">
