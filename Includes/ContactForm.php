@@ -35,6 +35,10 @@ function email($name, $email, $query, $msg, $type)
     $conn =  new mysqli('localhost', 'u577142979_HCS_DB_Admin', 'MotherDuck@70', 'u577142979_HomeCleanSolut');
     if($conn->connect_error) { die($conn->connect_error); }     // Connection Error
     $emailto = 'syndicategamedev@gmail.com';        // TODO: Change to correct Email
+    $headers = "From: " . $email . "\r\n";
+
+    $subject = $type . " | " . $subject;
+    mail($emailto, $subject, $msg, $headers);           // Send email
 }
 
 /*
