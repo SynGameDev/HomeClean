@@ -30,6 +30,13 @@ if(isset($_POST["send"]))
     }
 }
 
+function email($name, $email, $query, $msg, $type)
+{
+    $conn =  new mysqli('localhost', 'u577142979_HCS_DB_Admin', 'MotherDuck@70', 'u577142979_HomeCleanSolut');
+    if($conn->connect_error) { die($conn->connect_error); }     // Connection Error
+    $emailto = 'syndicategamedev@gmail.com';        // TODO: Change to correct Email
+}
+
 /*
 
 function email($name, $subject, $email, $msg, $type)
