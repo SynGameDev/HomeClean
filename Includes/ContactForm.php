@@ -1,5 +1,7 @@
 <?php
 // include_once('Functions.php');
+
+
 $name = $email = $query = $msg = "";
 
 
@@ -14,7 +16,7 @@ if(isset($_POST["send"]))
     switch($query)
     {
         case "review":
-            review($name, $email, $query, $msg, "Review");
+            email($name, $email, $query, $msg, "Review");
             break;
         case "quote":
             email($name, $email, $query, $ms, "Quote");
