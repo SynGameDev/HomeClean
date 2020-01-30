@@ -1,7 +1,7 @@
 <?php
 // include_once('Functions.php');
 
-/*
+
 $name = $email = $query = $msg = "";
 
 
@@ -31,33 +31,6 @@ if(isset($_POST["send"]))
 }
 
 
-function review($name, $email, $subject, $msg)
-{
-    $conn =  new mysqli('localhost', 'u577142979_HCS_DB_Admin', 'MotherDuck@70', 'u577142979_HomeCleanSolut');
-
-    $sql = "INSERT INTO testimonals (testimonal, review_by, status) VALUES ('$msg', '$name', 'Pending')";
-
-    $subject .= " | " . $name;
-    $headers = "From: $email" . "\r\n";
-    if($conn->query($sql) === TRUE)
-    {
-        $id = $conn->insert_id;
-
-        $e = "
-        $msg <br /> <br />
-
-        <a href='wip.homecleansolutions.com.au/Approve.php?id=$id'>Approve Review</a>
-        "
-        $emailto = "homecleansolutions71@gmail.com";
-        mail($emailto, $subject, $msg, $headers);
-        echo "<div class='alert alert-success' style='position:absolute;'>Email Sent</div>"
-    } else
-    {
-        die($conn->error);
-    }
-}
-
-
 function email($name, $subject, $email, $msg, $type)
 {
     $conn =  new mysqli('localhost', 'u577142979_HCS_DB_Admin', 'MotherDuck@70', 'u577142979_HomeCleanSolut');
@@ -69,6 +42,6 @@ function email($name, $subject, $email, $msg, $type)
     //  TODO: Email sent
 }
 
-*/
+
 
 ?>
