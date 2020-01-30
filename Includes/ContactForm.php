@@ -48,7 +48,7 @@ function email($name, $email, $query, $msg, $type)
         <a href='wip.homecleansolutions.com.au/Approve.php?id=$id'>Approve</a>
         ";
 
-        $sql = "INSERT INTO testimonals ('testimonal', 'review_by', 'status') VALUES ('$msg', '$name', 'Pending')";         // Query to DB
+        $sql = "INSERT INTO testimonals (testimonal, review_by, status) VALUES ('$msg', '$name', 'Pending')";         // Query to DB
         if($conn->query($sql) === TRUE)
         {
             $id = $conn->insert_id;         // Get the insert ID
