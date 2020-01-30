@@ -16,7 +16,7 @@ if(isset($_POST["send"]))
     switch($query)
     {
         case "review":
-            review($name, $email, $query, $msg);
+            review($name, $email, $query, $msg, "Review");
             break;
         case "quote":
             email($name, $email, $query, $ms, "Quote");
@@ -37,7 +37,23 @@ function email($name, $email, $query, $msg, $type)
     $emailto = 'syndicategamedev@gmail.com';        // TODO: Change to correct Email
     $headers = "From: " . $email . "\r\n";
 
-    $subject = $type . " | " . $subject;
+        // Check the tyype of query
+    if($type == "Review") {
+        $sql = "INSERT INTO testimonals ('testimonal', 'review_by', 'status') VALUES ('$msg', '$name', 'Pending')";         // Query to DB
+        if($conn->query($sql) === TRUE)
+        {
+            $id = $conn->insert_id;         // Get the insert ID
+        }
+        $msg = "
+        $name has left a review for you to approve <br />
+
+        $msg <br />
+
+        <a href='wip.homecleansolutions.com.au/Approve.php?id=$id'>Approve</a>
+        ";
+    }
+
+    $subject = $type . " | " . $name;               // Subject for the email type of query | Name of person
     mail($emailto, $subject, $msg, $headers);           // Send email
 }
 

@@ -1,4 +1,6 @@
 <?php
+
+/*
 function RetrieveReviews()
 {
 
@@ -33,13 +35,7 @@ function echoReview($t, $b)
         </div>
     ";
 }
+*/
 
-function input($data)
-{
-    $data = trim($data);
-    $data = stripslashes($data);
-    $data = htmlspecialchars($data);
-    return $data;
-}
 
  ?>
