@@ -1,5 +1,5 @@
 <?php
-include_once('Functions.php');
+// include_once('Functions.php');
 
 
 $name = $email = $query = $msg = "";
@@ -41,6 +41,16 @@ function email($name, $email, $query, $msg, $type)
     mail($emailto, $subject, $msg, $headers);           // Send email
 }
 
+
+
+
+function input($data)
+{
+    $data = trim($data);
+    $data = stripslashes($data);
+    $data = htmlspecialchars($data);
+    return $data;
+}
 /*
 
 function email($name, $subject, $email, $msg, $type)
