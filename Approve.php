@@ -1,5 +1,5 @@
 <?php
-include_once('Includes/Functions.php');
+// include_once('Includes/Functions.php');
 $id = "";
 
 $conn = $dbcon = new mysqli('localhost', 'u577142979_HCS_DB_Admin', 'MotherDuck@70', 'u577142979_HomeCleanSolut');
@@ -24,6 +24,16 @@ if(isset($_GET["id"]))
 } else
 {
     echo "<script>window.location.href='index.php';</script>";
+}
+
+
+
+function input($data)
+{
+    $data = trim($data);
+    $data = stripslashes($data);
+    $data = htmlspecialchars($data);
+    return $data;
 }
 
 ?>

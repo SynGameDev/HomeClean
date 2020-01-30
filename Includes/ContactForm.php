@@ -44,6 +44,7 @@ function email($name, $email, $query, $msg, $type)
         if($conn->query($sql) === TRUE)
         {
             $id = $conn->insert_id;         // Get the insert ID
+            echo "<script>alert('Email Sent!')</script>";       // TODO Test
         } else {
             echo $conn->error;
         }
@@ -66,13 +67,7 @@ function email($name, $email, $query, $msg, $type)
 
 
 
-function input($data)
-{
-    $data = trim($data);
-    $data = stripslashes($data);
-    $data = htmlspecialchars($data);
-    return $data;
-}
+
 /*
 
 function email($name, $subject, $email, $msg, $type)
