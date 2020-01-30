@@ -40,6 +40,14 @@ function email($name, $email, $query, $msg, $type)
         // Check the tyype of query
     if($type == "Review") {
 
+        $sql = "INSERT INTO testimonals (testimonal, review_by, status) VALUES ('$msg', '$name', 'Pending')";         // Query to DB
+        if($conn->query($sql) === TRUE)
+        {
+            $id = $conn->insert_id;         // Get the insert ID
+        } else {
+            echo $conn->error;
+        }
+
         $msg = "
         $name has left a review for you to approve <br />
 
@@ -48,13 +56,7 @@ function email($name, $email, $query, $msg, $type)
         <a href='wip.homecleansolutions.com.au/Approve.php?id=$id'>Approve</a>
         ";
 
-        $sql = "INSERT INTO testimonals (testimonal, review_by, status) VALUES ('$msg', '$name', 'Pending')";         // Query to DB
-        if($conn->query($sql) === TRUE)
-        {
-            $id = $conn->insert_id;         // Get the insert ID
-        } else {
-            echo $conn->error;
-        }
+
     }
 
     $subject = $type . " | " . $name;               // Subject for the email type of query | Name of person
