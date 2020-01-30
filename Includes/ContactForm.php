@@ -1,5 +1,5 @@
 <?php
-// include_once('Functions.php');
+include_once('Functions.php');
 
 
 $name = $email = $query = $msg = "";
