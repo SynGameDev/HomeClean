@@ -2,7 +2,7 @@
 
 if(isset($_POST["send"]))
 {
-
+    /*
     $name = $_POST['name'];
     $email = $_POST['email'];
     $newPath = str_replace(" ", "_", $name);            // Replace space with underscore
@@ -38,7 +38,7 @@ if(isset($_POST["send"]))
 
     $msg = "<button><a href='wip.homecleansolutions.com.au/$newPath'>View Resume & Cover Letter</a><button>";
     mail($emailto, $subject, $msg, $headers);
-
+    */
 
 }
 
