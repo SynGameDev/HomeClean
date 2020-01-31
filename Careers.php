@@ -43,15 +43,6 @@
                     <input type='email' class='form-control' name='email' placeholder='Email' required />
                 </div>
                 <div class='form-group'>
-                    <select name='query' class='form-control' id='query'>
-                        <option selected disabled>--- Select a query ---</option>
-                        <option value='review'>Leave a Review</option>
-                        <option value='quote'>Get a Quote</option>
-                        <option value='general'>General Question</option>
-                        <option value='cleaning'>Cleaning Tips</option>
-                    </select>
-                </div>
-                <div class='form-group'>
                     <div class='custom-file'>
                         <input type='file' class='custom-file-input' id='cv' />
                         <label class='custom-file-label' for='cv'>Upload Cover Letter</label>
