@@ -1,5 +1,56 @@
 <?php
 
+if(isset($_POST["send"]))
+{
+    $name = $email;
+
+    $name = input($_POST['name']);
+    $email = input($_POST['email']);
+    $newPath = str_replace(" ", "_", $name);            // Replace space with underscore
+    mkrdir("uploads/" . $newPath, 0700);
+    $pathName = "uploads/" . $newPath;          // Location of files will be uploaded // TO
+
+    $subject = 'Career | ' . $name;
+    $emailto = 'syndicategamedev@gmail.com';
+    $headers = "From: " . $email . "\r\n";
+    // TODO: Upload Files
+    $file_name = $_FILES["upload"]['name'];
+    $file_size = $_FILES["upload"]["size"];
+    $file_tmp = $_FILES["upload"]["tmp_name"];
+    $files_type = $_FILES["upload"]["type"];
+    $file_ext = strtolower(end(explode('.', $_FILES["upload"]["name"])));
+
+    $ext = array("pdf", "doc", "docx");
+
+    if(in_array($file_ext, $ext) === FALSE)
+    {
+        $err = "EXT NOT ALLOWED";
+    }
+
+    // TODO: Add File Size
+
+    if($err === "")
+    {
+        move_uploaded_file($file_tmp, $newPath . $file_name);
+        echo "<script>alert('Application Sent');</script>";
+    } else {
+        echo "<script>alert('Error');</script>";
+    }
+
+    $msg = "<button><a href='wip.homecleansolutions.com.au/$newPath'>View Resume & Cover Letter</a><button>";
+    mail($emailto, $subject, $msg, $headers);
+
+
+}
+
+function input($data)
+{
+    $data = trim($data);
+    $data = stripslashes($data);
+    $data = htmlspecialchars($data);
+    return $data;
+}
+
 ?>
 <!doctype html>
 <html lang="en">
@@ -44,13 +95,13 @@
                 </div>
                 <div class='form-group'>
                     <div class='custom-file'>
-                        <input type='file' class='custom-file-input' id='cv' />
+                        <input type='file' class='custom-file-input' id='upload' />
                         <label class='custom-file-label' for='cv'>Upload Cover Letter</label>
                     </div>
                 </div>
                 <div class='form-group'>
                     <div class='custom-file'>
-                        <input type='file' class='custom-file-input' id='resume' />
+                        <input type='file' class='custom-file-input' id='upload' />
                         <label class='custom-file-label' for='resume'>Upload Resume</label>
                     </div>
                 </div>
