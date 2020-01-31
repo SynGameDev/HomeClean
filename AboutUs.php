@@ -39,6 +39,8 @@
       <div class="carousel-inner">
         <?php
 
+        RetrieveReviews();
+
         function RetrieveReviews()
         {
 
