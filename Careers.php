@@ -2,44 +2,8 @@
 
 if(isset($_POST["send"]))
 {
-    /*
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $newPath = str_replace(" ", "_", $name);            // Replace space with underscore
-    mkrdir("uploads/" . $newPath, 0700);
-    $pathName = "uploads/" . $newPath;          // Location of files will be uploaded // TO
 
-    $subject = 'Career | ' . $name;
-    $emailto = 'syndicategamedev@gmail.com';
-    $headers = "From: " . $email . "\r\n";
-    // TODO: Upload Files
-    $file_name = $_FILES["upload"]['name'];
-    $file_size = $_FILES["upload"]["size"];
-    $file_tmp = $_FILES["upload"]["tmp_name"];
-    $files_type = $_FILES["upload"]["type"];
-    $file_ext = strtolower(end(explode('.', $_FILES["upload"]["name"])));
-
-    $ext = array("pdf", "doc", "docx");
-
-    if(in_array($file_ext, $ext) === FALSE)
-    {
-        $err = "EXT NOT ALLOWED";
-    }
-
-    // TODO: Add File Size
-
-    if($err === "")
-    {
-        move_uploaded_file($file_tmp, $newPath . $file_name);
-        echo "<script>alert('Application Sent');</script>";
-    } else {
-        echo "<script>alert('Error');</script>";
-    }
-
-    $msg = "<button><a href='wip.homecleansolutions.com.au/$newPath'>View Resume & Cover Letter</a><button>";
-    mail($emailto, $subject, $msg, $headers);
-    */
-
+    echo "Hello World";
 }
 
 function input($data)
