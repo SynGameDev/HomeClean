@@ -2,10 +2,9 @@
 
 if(isset($_POST["send"]))
 {
-    $name = $email;
 
-    $name = input($_POST['name']);
-    $email = input($_POST['email']);
+    $name = $_POST['name'];
+    $email = $_POST['email'];
     $newPath = str_replace(" ", "_", $name);            // Replace space with underscore
     mkrdir("uploads/" . $newPath, 0700);
     $pathName = "uploads/" . $newPath;          // Location of files will be uploaded // TO
