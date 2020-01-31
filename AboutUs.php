@@ -28,7 +28,7 @@ include_once('Includes/Functions.php');
     <!-- Navigation -->
     <?php include_once('Includes/nav.php'); ?>
 
-    <div class='jumbotron jumbotron-fluid' style="background-image: url('Images/AbouUs_Image.jpg');">
+    <div class='jumbotron jumbotron-fluid'>
         <p class='about-section'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ac rhoncus est. Donec vel porttitor ante, nec euismod libero. Aenean id ex quis sem luctus fringilla sit amet non ipsum. Phasellus a tortor a libero vehicula tempor sit amet vitae risus. Aliquam pellentesque massa at arcu luctus vehicula. Aliquam porttitor fringilla nunc at vulputate. Suspendisse potenti. Vestibulum elementum ante nec lacus molestie posuere. Vestibulum lacinia ullamcorper erat, quis semper turpis fermentum at. Sed in magna vel tellus porttitor laoreet egestas congue purus. Proin aliquam interdum velit, ut tristique magna egestas ac. Vivamus vitae quam mollis, ornare eros pharetra, egestas urna. Suspendisse posuere nulla lectus, at aliquet nulla vehicula eu. Integer ultrices scelerisque orci, eu bibendum quam mattis mollis.
         </p>
