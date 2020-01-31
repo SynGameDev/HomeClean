@@ -1,5 +1,6 @@
 <?php
-// TODO Implement Apply
+
+$name = $email
 ?>
 <!doctype html>
 <html lang="en">
@@ -52,7 +53,8 @@
                     </select>
                 </div>
                 <div class='form-group'>
-                    <textarea required class='form-control' style='height:250px;' placeholder='' id='data' name='msg'></textarea>
+                    <label for='cv'>Upload CV</lablel>
+                        <input type='file' name='cv' />
                 </div>
                 <div class='form-group'>
                     <button type='submit' name='send' class='btn btn-primary'>Submit</button>
