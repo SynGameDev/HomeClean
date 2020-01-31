@@ -1,9 +1,14 @@
 <?php
 
+$name = $email = "";
+
 if(isset($_POST["send"]))
 {
 
-    echo "Hello World";
+    $name = input($_POST["name"]);
+    $email = input($_POST["email"]);
+    $pathname = str_replace(' ', '_', $name);
+    echo $pathname;
 }
 
 function input($data)
