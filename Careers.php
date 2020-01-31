@@ -55,7 +55,13 @@ $name = $email
                 <div class='form-group'>
                     <div class='custom-file'>
                         <input type='file' class='custom-file-input' id='cv' />
-                        <label class='custom-file-label' for='cv'>Upload</label>
+                        <label class='custom-file-label' for='cv'>Upload Cover Letter</label>
+                    </div>
+                </div>
+                <div class='form-group'>
+                    <div class='custom-file'>
+                        <input type='file' class='custom-file-input' id='resume' />
+                        <label class='custom-file-label' for='resume'>Upload Resume</label>
                     </div>
                 </div>
                 <div class='form-group'>
