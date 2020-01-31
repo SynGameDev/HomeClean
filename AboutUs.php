@@ -1,5 +1,5 @@
 <?php
-include_once('Includes/Functions.php');
+// include_once('Includes/Functions.php');
 ?>
 <!doctype html>
 <html lang="en">
@@ -37,7 +37,34 @@ include_once('Includes/Functions.php');
     <!-- testimonials --> <!-- TODO: Make Mobile Friendly -->
     <div id="carousel" class="carousel slide" data-ride="carousel" style='height:250px;'>
       <div class="carousel-inner">
-        <?php RetrieveReviews(); ?>
+        <?php
+
+        function RetrieveReviews()
+        {
+
+            $conn = $dbcon = new mysqli('localhost', 'u577142979_HCS_DB_Admin', 'MotherDuck@70', 'u577142979_HomeCleanSolut');
+            if($conn->connect_error)
+            {
+                echo $conn->connect_error;
+            }
+
+            $sql = "SELECT * FROM testimonals WHERE status='Accepted' ORDER BY RAND();";
+            $result = $conn->query($sql);
+            if($result->num_rows > 0)
+            {
+                while($row = $result->fetch_assoc())
+                {
+                    $review = $row["testimonal"];
+                    $by = $row["review_by"];
+                    echoReview($review, $by);
+                }
+            } else
+            {
+                die($conn->error);
+            }
+        }
+
+        ?>
       </div>
         <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
