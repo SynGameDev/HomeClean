@@ -39,10 +39,6 @@
       <div class="carousel-inner">
         <?php
 
-        RetrieveReviews();
-
-        function RetrieveReviews()
-        {
 
             $conn = $dbcon = new mysqli('localhost', 'u577142979_HCS_DB_Admin', 'MotherDuck@70', 'u577142979_HomeCleanSolut');
             if($conn->connect_error)
@@ -64,7 +60,7 @@
             {
                 die($conn->error); echo "None";
             }
-        }
+        
 
         ?>
       </div>
