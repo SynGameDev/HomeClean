@@ -53,8 +53,10 @@ $name = $email
                     </select>
                 </div>
                 <div class='form-group'>
-                    <label for='cv'>Upload CV</lablel>
-                        <input type='file' name='cv' />
+                    <div class='custom-file'>
+                        <input type='file' class='custom-file-input' id='cv' />
+                        <label class='custom-file-label' for='cv'>Upload</label>
+                    </div>
                 </div>
                 <div class='form-group'>
                     <button type='submit' name='send' class='btn btn-primary'>Submit</button>
