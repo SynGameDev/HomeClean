@@ -60,7 +60,7 @@
                 }
             } else
             {
-                die($conn->error);
+                die($conn->error); echo "None";
             }
         }
 

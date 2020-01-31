@@ -53,8 +53,9 @@ function email($name, $email, $query, $msg, $type)
         $name has left a review for you to approve <br />
 
         $msg <br />
-
-        <a href='wip.homecleansolutions.com.au/Approve.php?id=$id'>Approve</a>
+        <html>
+        <a href='wip.homecleansolutions.com.au/Approve.php?id=$id'><button>Approve</button></a>
+        </html>
         ";
 
 
