@@ -46,7 +46,7 @@
                 echo $conn->connect_error;
             }
 
-            $sql = "SELECT * FROM testimonals WHERE status='Approved'";
+            $sql = "SELECT * FROM testimonals WHERE status='Pending'";
             $res = $conn->query($sql);
             if($result->num_rows > 0)
             {
