@@ -10,11 +10,12 @@ if(isset($_POST["send"]))
     $pathname = str_replace(' ', '_', $name);
     mkdir($pathname);
     $tar_dir = $pathname . "/";
-    $tar_file = $tar_dir . basename($_FILES['filetoupload']['name']);
+    $tar_cv = $tar_dir . basename($_FILES['cv']['name']);
+    $tar_re = $tar_dir . basename($_FILES["res"]['name']);
     $uploadOk = 1;
-    $fileType = strtolower(pathinfo($tar_file, PATHINFO_EXTENSION));
+    // $fileType = strtolower(pathinfo($tar_file, PATHINFO_EXTENSION));
 
-    if($_FILES["filetoupload"]["size"] > 50000)
+    if($_FILES["cv"]["size"] > 50000 && $_FILES['res']['size'] > 50000)
     {
         echo "<script>alert('Files Is To Large');</script>";
         $uploadOk = 0;
@@ -22,8 +23,9 @@ if(isset($_POST["send"]))
 
     if($uploadOk == 1)
     {
-        if(move_uploaded_file($_FILES["filetoupload"]["tmp_name"], $tar_file))
+        if(move_uploaded_file($_FILES["cv"]["tmp_name"], $tar_cv) && move_uploaded_file($_FILES['res']['tmp_name'], $tar_re))
         {
+            //TODO: Send email
             echo "<script>alert('Application Has Been Sent');</script>";
         } else {
             echo "<script>alert('Error Uploading your application');</script>";
@@ -86,13 +88,13 @@ function input($data)
                 </div>
                 <div class='form-group'>
                     <div class='custom-file'>
-                        <input type='file' class='custom-file-input' id='cv' name='filetoupload' />
+                        <input type='file' class='custom-file-input' id='cv' name='cv' />
                         <label class='custom-file-label' for='cv'>Upload Cover Letter</label>
                     </div>
                 </div>
                 <div class='form-group'>
                     <div class='custom-file'>
-                        <input type='file' class='custom-file-input' id='resume' name='filetoupload' />
+                        <input type='file' class='custom-file-input' id='resume' name='res' />
                         <label class='custom-file-label' for='resume'>Upload Resume</label>
                     </div>
                 </div>
