@@ -26,7 +26,7 @@ if(isset($_POST["send"]))
         if(move_uploaded_file($_FILES["cv"]["tmp_name"], $tar_cv) && move_uploaded_file($_FILES['res']['tmp_name'], $tar_re))
         {
             $subject = 'Job Application | ' . $name;
-            $emailto = 'syndicategamedev@gmail.com';
+            $emailto = 'K.A.Miller@outlook.com';
             $headers = 'From: ' . $email . "\r\n";
 
             $msg = "
