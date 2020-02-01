@@ -3,6 +3,7 @@
 
 body{
     background-color: whitesmoke !important;
+    min-height: 100%;
 }
 
 .top-header
