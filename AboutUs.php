@@ -47,6 +47,7 @@
             $res = $conn->query($sql);
             if($res->num_rows > 0)
             {
+                echo "Rows";
                 while($row = $result->fetch_assoc())
                 {
                     $review = $row["testimonal"];
