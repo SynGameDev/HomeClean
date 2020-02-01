@@ -46,7 +46,7 @@
                 echo $conn->connect_error;
             }
 
-            $sql = "SELECT * FROM testimonals WHERE status='Pending' ORDER BY RAND();";
+            $sql = "SELECT * FROM testimonals WHERE status='Approved' ORDER BY RAND();";
             $res = $conn->query($sql);
             if($res->num_rows > 0)
             {
