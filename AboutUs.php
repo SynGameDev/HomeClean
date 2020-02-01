@@ -36,7 +36,6 @@
       <div class="carousel-inner">
         <?php
 
-
             $conn = $dbcon = new mysqli('localhost', 'u577142979_HCS_DB_Admin', 'MotherDuck@70', 'u577142979_HomeCleanSolut');
             if($conn->connect_error)
             {
@@ -49,41 +48,14 @@
             {
                 while($row = $res->fetch_assoc())
                 {
-                    echo "Rows";
                     $review = $row["testimonal"];
                     $by = $row["review_by"];
-                    echo "
-                        <div class='carousel-item'>
-                            <p class='testText'>$review</p>
-                            <p class='testBy'>- $by</p>
-                        </div>
-                    ";
+                    echo $review;
+                    echo $by;
                 }
             } else {
                 echo "No Rows";
             }
-            /*
-            $sql = "SELECT * FROM testimonals WHERE status='Approved' ORDER BY RAND();";
-            $$res = $conn->query($sql);
-            if($res->num_rows > 0)
-            {
-                while($row = $result->fetch_assoc())
-                {
-                    $review = $row["testimonal"];
-                    $by = $row["review_by"];
-                    echo "
-                        <div class='carousel-item'>
-                            <p class='testText'>$review</p>
-                            <p class='testBy'>- $by</p>
-                        </div>
-                    ";
-                }
-            } else
-            {
-                die($conn->error); echo "None";
-            }
-
-            */
 
         ?>
       </div>
