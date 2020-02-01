@@ -9,6 +9,29 @@ if(isset($_POST["send"]))
     $email = input($_POST["email"]);
     $pathname = str_replace(' ', '_', $name);
     mkdir($pathname);
+    $tar_dir = $pathname . "/";
+    $tar_file = $tar_dir . basename($_FILES['filetoupload']['name']);
+    $uploadOk = 1;
+    $fileType = strtolower(pathinfo($tar_file, PATHINFO_EXTENSION));
+
+    if($_FILES["filetoupload"]["size"] > 50000)
+    {
+        echo "<script>alert('Files Is To Large');</script>";
+        $uploadOk = 0;
+    }
+
+    if($uploadOk == 1)
+    {
+        if(move_uploaded_file($_FILES["filetoupload"]["tmp_name"], $tar_file))
+        {
+            echo "<script>alert('Application Has Been Sent');</script>";
+        } else {
+            echo "<script>alert('Error Uploading your application');</script>";
+        }
+    }
+
+
+
 }
 
 function input($data)
@@ -54,7 +77,7 @@ function input($data)
      ?>
     <div class="form">
         <div class='content-form'>
-            <form method='post' action='<?php echo $_SERVER["PHP_SELF"]; ?>'>
+            <form method='post' action='<?php echo $_SERVER["PHP_SELF"]; ?>' enctype="multipart/form-data">
                 <div class='form-group'>
                     <input type='text' class='form-control' name='name' placeholder='Full Name' required />
                 </div>
@@ -63,13 +86,13 @@ function input($data)
                 </div>
                 <div class='form-group'>
                     <div class='custom-file'>
-                        <input type='file' class='custom-file-input' id='upload' />
+                        <input type='file' class='custom-file-input' id='cv' name='filetoupload' />
                         <label class='custom-file-label' for='cv'>Upload Cover Letter</label>
                     </div>
                 </div>
                 <div class='form-group'>
                     <div class='custom-file'>
-                        <input type='file' class='custom-file-input' id='upload' />
+                        <input type='file' class='custom-file-input' id='resume' name='filetoupload' />
                         <label class='custom-file-label' for='resume'>Upload Resume</label>
                     </div>
                 </div>
