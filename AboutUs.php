@@ -48,7 +48,7 @@
 
             $sql = "SELECT * FROM testimonals WHERE status='Pending'";
             $res = $conn->query($sql);
-            if($result->num_rows > 0)
+            if($res->num_rows > 0)
             {
                 echo "Rows";
             } else {
