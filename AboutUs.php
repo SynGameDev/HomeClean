@@ -51,6 +51,7 @@
                     $by = $row["review_by"];
                     echo "<p>" . $review . "</p>";
                     echo "<p>" . $by ."</p>";
+                    echo "<hr class='my-4' />";
                 }
             } else {
                 echo "No Rows";
