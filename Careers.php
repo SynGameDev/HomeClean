@@ -8,7 +8,6 @@ if(isset($_POST["send"]))
     $name = input($_POST["name"]);
     $email = input($_POST["email"]);
     $pathname = str_replace(' ', '_', $name);
-    $pathname = "uploads/" . $pathname;
     mkdir($pathname);
 }
 
