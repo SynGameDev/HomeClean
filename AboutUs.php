@@ -42,16 +42,26 @@
             {
                 echo $conn->connect_error;
             }
-/*
+
             $sql = "SELECT * FROM testimonals WHERE status='Approved' ORDER BY RAND();";
             $res = $conn->query($sql);
             if($res->num_rows > 0)
             {
-                echo "Rows";
+                while($row = $result->fetch_assoc())
+                {
+                    $review = $row["testimonal"];
+                    $by = $row["review_by"];
+                    echo "
+                        <div class='carousel-item'>
+                            <p class='testText'>$review</p>
+                            <p class='testBy'>- $by</p>
+                        </div>
+                    ";
+                }
             } else {
                 echo "No Rows";
             }
-            */
+            /*
             $sql = "SELECT * FROM testimonals WHERE status='Approved' ORDER BY RAND();";
             $$res = $conn->query($sql);
             if($res->num_rows > 0)
@@ -72,7 +82,7 @@
                 die($conn->error); echo "None";
             }
 
-
+            */
 
         ?>
       </div>
