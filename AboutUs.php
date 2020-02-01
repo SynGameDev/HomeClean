@@ -49,8 +49,8 @@
                 {
                     $review = $row["testimonal"];
                     $by = $row["review_by"];
-                    echo $review;
-                    echo $by;
+                    echo "<p>" . $review . "</p>";
+                    echo "<p>" . $by ."</p>";
                 }
             } else {
                 echo "No Rows";
