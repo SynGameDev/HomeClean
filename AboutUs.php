@@ -39,13 +39,13 @@
       <div class="carousel-inner">
         <?php
 
-
+            echo "Test";
             $conn = $dbcon = new mysqli('localhost', 'u577142979_HCS_DB_Admin', 'MotherDuck@70', 'u577142979_HomeCleanSolut');
             if($conn->connect_error)
             {
                 echo $conn->connect_error;
             }
-
+            /*
             $sql = "SELECT * FROM testimonals WHERE status='Accepted' ORDER BY RAND();";
             $result = $conn->query($sql);
             if($result->num_rows > 0)
@@ -66,6 +66,7 @@
                 die($conn->error); echo "None";
             }
 
+            */
 
         ?>
       </div>
