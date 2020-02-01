@@ -39,7 +39,7 @@
       <div class="carousel-inner">
         <?php
 
-
+            /*
             $conn = $dbcon = new mysqli('localhost', 'u577142979_HCS_DB_Admin', 'MotherDuck@70', 'u577142979_HomeCleanSolut');
             if($conn->connect_error)
             {
@@ -54,10 +54,10 @@
             } else {
                 echo "No Rows";
             }
-            /*
+            */
             $sql = "SELECT * FROM testimonals WHERE status='Approved' ORDER BY RAND();";
-            $result = $conn->query($sql);
-            if($result->num_rows > 0)
+            $$res = $conn->query($sql);
+            if($res->num_rows > 0)
             {
                 while($row = $result->fetch_assoc())
                 {
@@ -75,7 +75,7 @@
                 die($conn->error); echo "None";
             }
 
-        */
+
 
         ?>
       </div>
