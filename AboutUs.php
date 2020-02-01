@@ -1,6 +1,3 @@
-<?php
-// include_once('Includes/Functions.php');
-?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -39,13 +36,13 @@
       <div class="carousel-inner">
         <?php
 
-            /*
+
             $conn = $dbcon = new mysqli('localhost', 'u577142979_HCS_DB_Admin', 'MotherDuck@70', 'u577142979_HomeCleanSolut');
             if($conn->connect_error)
             {
                 echo $conn->connect_error;
             }
-
+/*
             $sql = "SELECT * FROM testimonals WHERE status='Approved' ORDER BY RAND();";
             $res = $conn->query($sql);
             if($res->num_rows > 0)
