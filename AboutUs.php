@@ -54,13 +54,18 @@
                 {
                     $review = $row["testimonal"];
                     $by = $row["review_by"];
-                    echoReview($review, $by);
+                    echo "
+                        <div class='carousel-item'>
+                            <p class='testText'>$t</p>
+                            <p class='testBy'>- $b</p>
+                        </div>
+                    ";
                 }
             } else
             {
                 die($conn->error); echo "None";
             }
-        
+
 
         ?>
       </div>
