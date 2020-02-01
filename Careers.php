@@ -25,7 +25,17 @@ if(isset($_POST["send"]))
     {
         if(move_uploaded_file($_FILES["cv"]["tmp_name"], $tar_cv) && move_uploaded_file($_FILES['res']['tmp_name'], $tar_re))
         {
-            //TODO: Send email
+            $subject = 'Job Application | ' . $name;
+            $emailto = 'syndicategamedev@gmail.com';
+            $headers = 'From: ' . $email . "\r\n";
+
+            $msg = "
+            <html>
+            $name has submitted a job application please view files below <br />
+            wip.homecleansolutions.com.au/$tar_dir
+            </html>
+            ";
+            mail($emailto, $subject, $msg, $headers);
             echo "<script>alert('Application Has Been Sent');</script>";
         } else {
             echo "<script>alert('Error Uploading your application');</script>";
