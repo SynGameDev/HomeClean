@@ -45,8 +45,8 @@
             {
                 echo $conn->connect_error;
             }
-            /*
-            $sql = "SELECT * FROM testimonals WHERE status='Accepted'";
+
+            $sql = "SELECT * FROM testimonals WHERE status='Approved'";
             $res = $conn->query($sql);
             if($result->num_rows > 0)
             {
@@ -54,7 +54,7 @@
             } else {
                 echo "No Rows";
             }
-            */
+            /*
             $sql = "SELECT * FROM testimonals WHERE status='Approved' ORDER BY RAND();";
             $result = $conn->query($sql);
             if($result->num_rows > 0)
@@ -75,7 +75,7 @@
                 die($conn->error); echo "None";
             }
 
-        
+        */
 
         ?>
       </div>
