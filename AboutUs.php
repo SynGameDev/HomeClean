@@ -32,8 +32,7 @@
     </div>
 
     <!-- testimonials --> <!-- TODO: Make Mobile Friendly -->
-    <div id="carousel" class="carousel slide" data-ride="carousel" style='height:250px;'>
-      <div class="carousel-inner">
+    <div id="carousel" class="carousel slide" data-ride="carousel" style='text-align:center;'>
         <?php
 
             $conn = $dbcon = new mysqli('localhost', 'u577142979_HCS_DB_Admin', 'MotherDuck@70', 'u577142979_HomeCleanSolut');
@@ -58,15 +57,6 @@
             }
 
         ?>
-      </div>
-        <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
     </div>
 
     <!-- Footer -->
