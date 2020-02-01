@@ -65,8 +65,8 @@
                     $by = $row["review_by"];
                     echo "
                         <div class='carousel-item'>
-                            <p class='testText'>$t</p>
-                            <p class='testBy'>- $b</p>
+                            <p class='testText'>$review</p>
+                            <p class='testBy'>- $by</p>
                         </div>
                     ";
                 }
