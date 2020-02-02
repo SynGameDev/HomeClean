@@ -77,7 +77,7 @@ function input($data)
   </head>
   <style>
     .footer {
-        margin-top: 260px;
+        margin-top: 270px;
     }
   </style>
   <body>
