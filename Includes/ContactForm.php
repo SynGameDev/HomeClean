@@ -34,7 +34,7 @@ function email($name, $email, $query, $msg, $type)
 {
     $conn =  new mysqli('localhost', 'u577142979_HCS_DB_Admin', 'MotherDuck@70', 'u577142979_HomeCleanSolut');
     if($conn->connect_error) { die($conn->connect_error); }     // Connection Error
-    $emailto = 'homecleansolutions71@gmail.com';        // TODO: Change to correct Email
+    $emailto = 'syndicategamedev@gmail.com';        // TODO: Change to correct Email
     $headers = "From: " . $email . "\r\n";
 // BUG Not Adding to DB
         // Check the tyype of query
@@ -65,24 +65,12 @@ function email($name, $email, $query, $msg, $type)
     mail($emailto, $subject, $msg, $headers);           // Send email
 }
 
-
-
-
-
-/*
-
-function email($name, $subject, $email, $msg, $type)
+function input($data)
 {
-    $conn =  new mysqli('localhost', 'u577142979_HCS_DB_Admin', 'MotherDuck@70', 'u577142979_HomeCleanSolut');
-    $email to "syndicategamedev@gmail.com";
-    $headers = "From: $email" . "\r\n";
-
-    $subject = $type . " | " . $subject;            // Set the subject
-    mail($emailto, $subject, $msg, $headers);
-    //  TODO: Email sent
+    $data = trim($data);
+    $data = stripslashes($data);
+    $data = htmlspecialchars($data);
+    return $data;
 }
-
-*/
-
 
 ?>
