@@ -16,21 +16,21 @@ if(isset($_POST["send"]))
     switch($query)
     {
         case "review":
-            email($name, $email, $query, $msg, "Review");
+            email($name, $email, $msg, "Review");
             break;
         case "quote":
-            email($name, $email, $query, $ms, "Quote");
+            email($name, $email, $msg, "Quote");
             break;
         case "general":
-            email($name, $email, $query, $ms, "General Enquiry");
+            email($name, $email, $msg, "General Enquiry");
             break;
         case "cleaning":
-            email($name, $email, $query, $ms, "Cleaning Tips");
+            email($name, $email, $msg, "Cleaning Tips");
             break;
     }
 }
 
-function email($name, $email, $query, $msg, $type)
+function email($name, $email, $msg, $type)
 {
     $conn =  new mysqli('localhost', 'u577142979_HCS_DB_Admin', 'MotherDuck@70', 'u577142979_HomeCleanSolut');
     if($conn->connect_error) { die($conn->connect_error); }     // Connection Error
