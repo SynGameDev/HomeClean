@@ -63,7 +63,7 @@ function email($name, $email, $query, $msg, $type)
 
     $subject = $type . " | " . $name;               // Subject for the email type of query | Name of person
     mail($emailto, $subject, $msg, $headers);           // Send email
-    echo "<script>alert('Thanks for enquiry, we'll be in touch shortly);</script>";
+    echo "<script>alert('Thanks for enquiry, we'll be in touch shortly');</script>";
 }
 
 function input($data)
