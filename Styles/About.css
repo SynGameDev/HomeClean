@@ -6,6 +6,10 @@
     color: whitesmoke;
 }
 
+.jumbotron {
+    height: 300px;
+}
+
 .carousel p
 {
     color:inherit;
@@ -57,7 +61,7 @@
 
     .jumbotron
     {
-        height: 400px;
+        height: 600px;
         background-image: none;
     }
 
