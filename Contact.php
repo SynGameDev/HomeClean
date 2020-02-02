@@ -21,6 +21,11 @@ include_once('Includes/ContactForm.php');
 
     <title>LANDING | HOMECLEANSOLUTIONS</title>
   </head>
+  <style>
+  .footer {
+      margin-top: 25px;
+  }
+  </style>
   <body>
       <?php include_once('Includes/top-header.php'); ?>
 
