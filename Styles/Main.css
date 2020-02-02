@@ -196,7 +196,7 @@ nav
 }
 
 /* Media Screens For display's */
-@media only screen and (max-width: 400px)
+@media only screen and (max-width: 475px)
 {
     .social
     {
@@ -204,6 +204,6 @@ nav
     }
 
     .jumbotron {
-        display: none;
+        height: 300px;
     }
 }
