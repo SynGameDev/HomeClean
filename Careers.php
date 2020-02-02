@@ -75,6 +75,11 @@ function input($data)
 
     <title>LANDING | HOMECLEANSOLUTIONS</title>
   </head>
+  <style>
+    .footer {
+        margin-top: 230px;
+    }
+  </style>
   <body>
       <?php include_once('Includes/top-header.php'); ?>
 
