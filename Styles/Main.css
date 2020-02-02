@@ -204,6 +204,6 @@ nav
     }
 
     .jumbotron {
-        height: 30px;
+        display: none;
     }
 }
