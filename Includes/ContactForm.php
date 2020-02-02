@@ -62,6 +62,7 @@ function email($name, $email, $msg, $type)
     }
 
     echo $msg;
+    echo "Test";
 
     $subject = $type . " | " . $name;               // Subject for the email type of query | Name of person
     mail($emailto, $subject, $msg, $headers);           // Send email
