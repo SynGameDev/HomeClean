@@ -211,6 +211,6 @@ nav
 @media only screen and (max-width: 370px)
 {
     .jumbotron {
-        height: 250px;
+        height: 350px;
     }
 }
