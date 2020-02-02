@@ -61,6 +61,8 @@ function email($name, $email, $query, $msg, $type)
 
     }
 
+    echo $msg;
+
     $subject = $type . " | " . $name;               // Subject for the email type of query | Name of person
     mail($emailto, $subject, $msg, $headers);           // Send email
     echo "<script>alert('Thanks for enquiry, we will be in touch shortly');</script>";
