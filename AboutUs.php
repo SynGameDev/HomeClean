@@ -29,7 +29,10 @@
 
     <div class='jumbotron jumbotron-fluid'>
         <p class='about-section'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ac rhoncus est. Donec vel porttitor ante, nec euismod libero. Aenean id ex quis sem luctus fringilla sit amet non ipsum. Phasellus a tortor a libero vehicula tempor sit amet vitae risus. Aliquam pellentesque massa at arcu luctus vehicula. Aliquam porttitor fringilla nunc at vulputate. Suspendisse potenti. Vestibulum elementum ante nec lacus molestie posuere. Vestibulum lacinia ullamcorper erat, quis semper turpis fermentum at. Sed in magna vel tellus porttitor laoreet egestas congue purus. Proin aliquam interdum velit, ut tristique magna egestas ac. Vivamus vitae quam mollis, ornare eros pharetra, egestas urna. Suspendisse posuere nulla lectus, at aliquet nulla vehicula eu. Integer ultrices scelerisque orci, eu bibendum quam mattis mollis.
+            HomeClean Solutions are a  well established domestic and commercial cleaning company with an outstanding reputation for quality, integrity and attention to detail.  Proudly privately owned and in operation since 2018, HomeClean Solutions provide a range of  quality services customised specifically to the requirements of each of our valued customers.
+
+
+    We are proud of our reputation and unrivalled customer retention rate, both of which can be attributed to a solid foundation built on consistently delivering a high standard of service and value for money.
         </p>
     </div>
 
