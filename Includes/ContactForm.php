@@ -34,7 +34,7 @@ function email($name, $email, $msg, $type)
 {
     $conn =  new mysqli('localhost', 'u577142979_HCS_DB_Admin', 'MotherDuck@70', 'u577142979_HomeCleanSolut');
     if($conn->connect_error) { die($conn->connect_error); }     // Connection Error
-    $emailto = 'syndicategamedev@gmail.com';        // TODO: Change to correct Email
+    $emailto = 'homecleansolutions71@gmail.com';        // TODO: Change to correct Email
     $headers = "From: " . $email . "\r\n";
 // BUG Not Adding to DB
         // Check the tyype of query
@@ -60,9 +60,6 @@ function email($name, $email, $msg, $type)
 
 
     }
-
-    echo $msg;
-    echo "Test";
 
     $subject = $type . " | " . $name;               // Subject for the email type of query | Name of person
     mail($emailto, $subject, $msg, $headers);           // Send email
