@@ -23,7 +23,7 @@ include_once('Includes/ContactForm.php');
   </head>
   <style>
   .footer {
-      margin-top: 25px;
+      margin-top: 130px;
   }
   </style>
   <body>
