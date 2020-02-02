@@ -7,7 +7,7 @@
 }
 
 .jumbotron {
-    height: 300px;
+    height: 300px !important;
 }
 
 .carousel p
