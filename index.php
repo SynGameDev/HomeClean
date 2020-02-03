@@ -31,7 +31,7 @@
         <div class='container'>
             <div class='row'>
                 <div class='col-sm'>
-                    <p class='jumboText black'>Needing a professional cleaner for your home or office? Do you need an end of lease clean?<br /><a href='Contact.php'>Contact us below</a></p>
+                    <p class='jumboText black'>Do you need a professional cleaner for your home or office? Do you need an end of lease clean?<br /><a href='Contact.php'>Contact us below</a></p>
                     <hr class='my-4' />
                 </div>
             </div>
